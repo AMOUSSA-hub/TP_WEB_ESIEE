@@ -8,43 +8,63 @@
   </head>
   <body>
     <h1>Compte Rendu de TP1</h1>
-    <p>AMOUSSA</p>
+
+    <table>
+      <tr>
+        <td></td>
+        <td>Rayan AMOUSSA</td>
+      </tr>
+      <tr>
+        <td>ESIEE ING1 INFO</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">TP 1 de Programmation Web</td>
+      </tr>
+    </table>
 
     <h2>Exercice 1: Document de base</h2>
-
-    <h3>2) A quoi servent les tags h1, h2 et h3 ?</h3>
-    <p>Les balises &lt;h1&gt; &lt;h2&gt;, et &lt;h3&gt; sont utilisés pour les titres.</p>
-
-    <h3>3) A quoi sert le tag &lt;p&gt; ?</h3>
-    <p>La balise &lt;p&gt; sert à définir un paragraphe.</p>
-
-    <h3>4) Les balises HTML ouvrantes et fermantes</h3>
-    <p>Les tags HTML commencent par une balise ouvrante &lt;foo&gt; et finissent par une balise fermante &lt;/foo&gt;.</p>
-    
-    <h3>5) Comment mettre en gras ou en italique ?</h3>
-    <p>
-      Pour mettre du texte en <b>gras</b>, on utilise la balise &lt;b&gt;. 
-      Pour mettre du texte en <i>italique</i>, on utilise la balise &lt;i&gt;.
-    </p>
-
-    <h3>6) Comment mettre un mot à la fois en gras et en italique ?</h3>
-    <p>
-      Pour mettre un mot à la fois en <b><i>gras et en italique</i></b>, on peut imbriquer les balises &lt;b&gt; et &lt;i&gt;.
-    </p>
-
-    <h3>7) Changer le titre de la fenêtre du navigateur</h3>
-    <p>
-      Le titre de la fenêtre est défini par la balise &lt;title&gt; à l'intérieur de la balise &lt;head&gt;.
-    </p>
-
-    <h3>8) Ajouter un lien vers un cours</h3>
-    <p>
-      <a href="http://forax.github.io/course/progweb/" target="_blank">Lien du cours</a>
-    </p>
-
-    <h3>Arbre des tags HTML</h3>
-
-  <pre>
+    <ol start="2">
+      <li>
+        <h3>A quoi servent les tags h1, h2 et h3 ?</h3>
+        <p>Les balises &lt;h1&gt;, &lt;h2&gt;, et &lt;h3&gt; sont utilisées pour les titres.</p>
+      </li>
+      <li>
+        <h3>A quoi sert le tag &lt;p&gt; ?</h3>
+        <p>La balise &lt;p&gt; sert à définir un paragraphe.</p>
+      </li>
+      <li>
+        <h3>Les balises HTML ouvrantes et fermantes</h3>
+        <p>Les tags HTML commencent par une balise ouvrante &lt;foo&gt; et finissent par une balise fermante &lt;/foo&gt;.</p>
+      </li>
+      <li>
+        <h3>Comment mettre en gras ou en italique ?</h3>
+        <p>
+          Pour mettre du texte en <b>gras</b>, on utilise la balise &lt;b&gt;. 
+          Pour mettre du texte en <i>italique</i>, on utilise la balise &lt;i&gt;.
+        </p>
+      </li>
+      <li>
+        <h3>Comment mettre un mot à la fois en gras et en italique ?</h3>
+        <p>
+          Pour mettre un mot à la fois en <b><i>gras et en italique</i></b>, on peut imbriquer les balises &lt;b&gt; et &lt;i&gt;.
+        </p>
+      </li>
+      <li>
+        <h3>Changer le titre de la fenêtre du navigateur</h3>
+        <p>
+          Le titre de la fenêtre est défini par la balise &lt;title&gt; à l'intérieur de la balise &lt;head&gt;.
+        </p>
+      </li>
+      <li>
+        <h3>Ajouter un lien vers un cours</h3>
+        <p>
+          <a href="http://forax.github.io/course/progweb/" target="_blank">Lien du cours</a>
+        </p>
+      </li>
+      <li>
+        <h3>Arbre des tags HTML</h3>
+        <pre>
 html
 ├── head
 │   
@@ -55,40 +75,115 @@ html
     ├── p 
     ├── pre
     └── img
-  </pre>
-    <p>10) Voici une image représentant l'arbre des tags HTML utilisés dans ce document :</p>
-    <img src="mon-arbre-a-moi.jpg" alt="Arbre des tags HTML" width="100">
-
+        </pre>
+      </li>
+      <li>
+        <h3>Voici une image représentant l'arbre des tags HTML utilisés dans ce document:</h3>
+        <img src="mon-arbre-a-moi.jpg" alt="Arbre des tags HTML" width="100">
+      </li>
+    </ol>
 
     <h2>Exercice 2: URL</h2>
+    <ol start="1">
+      <li>
+        <h3>Nom de la machine et nom de domaine :</h3>
+        <p>Nom de la machine : <b>monge</b> <br> Nom de domaine: <b>univ-mlv.fr</b></p>
+      </li>
+      <li>
+        <h3>Si l'on exécute:<br> <i><small>host monge.univ-mlv.fr</small></i></h3>
+        <p>À quoi correspond la première ligne de la réponse ?<br> À quoi correspond la seconde ligne de la réponse ?</p>
+        <img src="reponse_commande_host.jpeg" alt="réponse commande: host monge.univ-mlv.fr" width="300">
+        <p>
+          La 1er ligne nous renvoie le "surnom de la machine" ainsi que son adresse IP.<br>
+          La 2ème ligne nous informe que la gestion des mails est effectuée par le serveur monge.univ-mlv.fr.
+        </p>
+      </li>
+      <li>
+        <h3>A votre avis, pourquoi utilise-t-on des noms pour les machines plutôt que des adresses IP ?</h3>
+        <p>Des noms explicites sont plus simples à retenir que des suites de chiffres.</p>
+      </li>
+      <li>
+        <h3>Partie forax.github.io</h3>
+        <img src="host_forax.jpg" alt="réponse commande: host forax.github.io" width="300">
+        <p>
+          La commande renvoie plusieurs adresses IP.<br>
+          On ne peut pas accéder à cette page via l'adresse IP de la machine l'hébergeant car elle est hébergée sur un serveur GitHub, 
+          et la gestion des sites doit se faire via le nom que l'on inscrit dans l'URL.
+        </p>
+      </li>
+      <li>
+        <h3>Traceroute</h3>  
+        <p>La commande Traceroute affiche les routeurs traversés par les paquets pour atteindre la machine de destination.</p>
+      </li>
+      <li>
+        <h3>Partie <i>http://www.mai-ko.com/</i></h3>
+        <img src="host_mai.jpg" alt="réponse commande: host www.mai-ko.com" width="300">
+        <p>
+          Ce site est hébergé sur 2 machines avec les adresses IP : <b>35.79.179.94</b> et <b>18.182.75.64</b>.
+        </p>
+        <img src="reponse_whois.jpg" alt="réponse commande: whois  [IP]" width="300">
+        <p>
+          Grâce à la commande whois, on peut voir que le serveur du site mai-ko.com est dans la ville de <b>Seattle</b>.
+        </p>
+      </li>
+    </ol>
 
-    <p>1) nom de la machine : <b>monge</b> <br> nom de domaine: <b>univ-mlv.fr</b></p>
+    <h2>Exercice 3 - Service HTTP</h2>
+    <ol>
+        <li>
+            <h3>On cherche à savoir à quoi correspond le fichier <b>/etc/services</b>.</h3>
+            <p>Le fichier /etc/services contient la liste des services web avec leurs numéros de port respectif et le protocole utilisé. </p>
+        </li>
+        <li>
+            <h3>Utilisez la commande grep sur le fichier /etc/services pour déterminer le numéro du port TCP correspondant au service http.</h3>
+            <p><u>numéro de port TCP pour le service http</u>: 80 </p>
+        </li>
 
-    <h3>2) Si l'on exécute:<br> <i><small>host monge.univ-mlv.fr</small><br></i> À quoi correspond la première ligne de la réponse ?<br> À quoi correspond la seconde ligne de la réponse ? </h3>
-    <img src="reponse_commande_host.jpeg" alt="Arbre des tags HTML" width="300">
-    <p> La 1er ligne nous renvoie le "surnom de la machine" ainsi que sont addresse IP<br>
-   La  2ème ligne nous informe que la gestion des mails est effectué par le serveur monge.univ-mlv.fr </p>
+        <li>
+            <h3> <u>Partie GET / HTTP/0.9</u></h3>
+        </li>
+        <li>
+            <h3>A quoi correspondent les 3 valeurs sur la première ligne de l'entête ? </h3>
+            <p> je pense qu'il y a un probleme avec cette commande je devrai avoir un retour ressemblant a "HTTP/0.9 200 OK
+                          Content-Type: text/html
+                          Content-Length: 2332"
+                          mais cela affiche cela : 
+            <img src="Capture.jpg" alt="réponse commande : nc [addr] [port] + GET / HTTP/0.9" width="300">
+        </li>
+        <li>
+          <p> Content-Type --> C'est le type de contenu envoyé.</p>
+        </li>
+        <li>
+            <p> Content-Length  --> donne la taille du contenu en octets du corp de la réponse.</p>
+        </li> 
+        <li> <h3> <u>Partie HTTP/1.1</u> </h3>
+            <img src="Capture2.jpg" alt="réponse commande : nc [addr] [port] + GET / HTTP/1.1" width="300">
+        </li>
+        <li>    
+            <h3>Pourquoi dans la version 1.1 du protocole HTTP, on doit fournir le Host ? </h3>
+           
+            <p>il est obligatoire d'inclure le Host car de nombreux serveurs peuvent héberger plusieurs sites Web sur la même adresse IP.</p>
+        </li>
+        <li>
+            <h3>À quoi correspond la valeur de Location ?  </h3>
+            <p>La valeur de Location indique l'URL vers laquelle le client doit se rediriger.</p>
+        </li>
+    </ol>
 
-   <h3> 3) A votre avis, pourquoi utilise-t-on des noms pour les machines plutôt que des adresses IP ?</h3>
-      <p> Des noms explicites  sont plus simple à retenir que des suites de chiffres.</p>
+    <h2>Exercice 4: Les listes et les tables</h2>
 
-    <h3> 4) Partie forax.github.io </h3>
-    <img src="host_forax.jpg" alt="Arbre des tags HTML" width="300">
-      <p>La commande renvoie plusieurs adresse ip.<br>
-        On ne peut pas accéder à cette page via l'adresse ip de la machine l'hébergeant car elle est hébergé sur un serveur github 
-        et la gestion des sites doit se faire via le nom que l'on inscrit dans l'url.
-      </p>
+<ol>
+
+  <li>
+    <p>Pour que la cellule contenant le nom de la formation prenne 2 colonnes de large, il suffit de définir <b> l'attribut colspan de la balise  &lt;td&gt; </b>  correspondant à 2.<br>
+    Je connaissait déjà cet attribut donc j'ai simplement fait <i>ctrl+F</i>.
+    </p>
+    <img src="colspan_doc.jpg" alt="Arbre des tags HTML" width="300">
+
+  </li>
+
+</ol>
     
-      <h3> 5) Traceroute  </h3>  
-      <p>La commande Traceroute affiche les routeurs traversés par les paquets pour atteindre la machine de destination.</p>
-
-      <h3> 6) Partie <i>http://www.mai-ko.com/</i> </h3>
-      <img src="host_mai.jpg" alt="Arbre des tags HTML" width="300">
-
-      <p> Ce site est hébergé sur 2 machines avec les adresses ip : <b>35.79.179.94</b> et <b>18.182.75.64</b></p>
-      <img src="reponse_whois.jpg" alt="Arbre des tags HTML" width="300">
-      <p>Grâce à la commande whois on peut voir que le serveur du site mai-ko.com dans la ville de <b>Seattle</b>. </p>
-
     
   </body>
 </html>
