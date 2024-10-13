@@ -1,0 +1,62 @@
+<html><head>
+    <meta charset="utf-8">
+    <style>
+        
+        ul {
+            position: fixed;
+            top: 0px;
+            left: 0px;            
+            list-style: none;
+            display: flex; 
+            justify-content: left;
+            background-color: tomato;
+            height: 48px;
+            width: 100%;
+            border-bottom: 2px solid #000;
+        }
+
+        ul >li{
+            font-weight: bold;
+            font-family: 'Courier New',serif;
+            width: 120px;
+            margin: 10px;
+            background-color: yellow;
+            
+        }
+
+        ul > li > ul{
+            display: none;
+            position: relative;
+            top: 30%;
+            left: 0;
+            z-index: 10;
+        }
+
+        ul li:nth-child(4) {
+  margin-left:auto; 
+}
+
+ul li:hover > ul {
+  display: block; /* Affiche le sous-menu au survol */
+}
+
+        
+    </style>
+   </head>
+   <body>
+     <div>
+      <ul>
+       <li>
+         Web
+         <ul>
+          <li>Test1</li>
+          <li>Test2</li>
+         </ul>
+       </li>
+       <li>HTML</li>
+       <li>CCS</li>
+       <li>Help</li>
+      </ul>
+     </div>
+   
+  </body></html>

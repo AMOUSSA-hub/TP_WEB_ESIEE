@@ -1,0 +1,30 @@
+div > img {
+    width: 250px;
+    border: 1px solid #aaaaaa;
+    display: block;
+    
+}
+
+div {
+    float: left;
+    margin: 10px;
+    /* position: relative; */
+    
+}
+
+div > div {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    right:10px ;
+ 
+}
+
+div > img:hover {
+    opacity: 0.8;
+}
+
+

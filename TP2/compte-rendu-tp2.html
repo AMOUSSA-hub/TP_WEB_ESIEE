@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Style de liste et de table</title>
+    <!-- Lien vers la feuille de style externe -->
+    <link rel="stylesheet" href="compte-rendu-tp2.css">
+    <!-- Styles internes déplacés dans le fichier CSS -->
+</head>
+
+<body>
+    <!-- Titre de l'exercice en rouge brique -->
+    <h2 style="color: red;">Exercice 1 - Style de base</h2>
+
+    <!-- Titre du compte rendu de TP centré -->
+    <h1 class="centered">Compte Rendu de TP</h1>
+
+    <!-- Nom aligné à droite -->
+    <div class="right">AMOUSSA</div>
+
+    <h2 style="color: red;">Exercice 2 - Style de liste et de table</h2>
+
+    <!-- Liste des questions de l'exercice 1 et 2 -->
+    <ol class="roman-list">
+        <li>Ajouter le titre de l'exercice.</li>
+        <li>Déclarer une balise style pour la police sans-serif.</li>
+        <li>Changer les tailles des polices pour h1, h2, h3.</li>
+        <li>Modifier la couleur des h2, sauf pour le titre.</li>
+        <li>Centrer le titre du compte rendu.</li>
+        <li>Aligner votre nom à droite.</li>
+        <li>Changer le style des liens.</li>
+    </ol>
+
+    <ol class="roman-list">
+        <li>Créer une feuille de style externe.</li>
+        <li>Tester la feuille de style externe.</li>
+        <li>Utiliser les chiffres romains pour les listes.</li>
+        <li>Créer une table HTML pour les films au box office.</li>
+        <li>Changer l'apparence de la table.</li>
+    </ol>
+
+    <!-- Table des films au box office -->
+
+    <table class="wikitable sortable" style="margin:auto;">
+        <caption>Highest-grossing films of 2023 by In-year release</caption>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Domestic gross</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td><i><a href="/wiki/Barbie_(film)" title="Barbie (film)">Barbie</a></i></td>
+                <td>$636,236,401</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><i><a href="/wiki/The_Super_Mario_Bros._Movie" title="The Super Mario Bros. Movie">The Super Mario Bros. Movie</a></i></td>
+                <td>$574,934,330</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><i><a href="/wiki/Spider-Man:_Across_the_Spider-Verse" title="Spider-Man: Across the Spider-Verse">Spider-Man: Across the Spider-Verse</a></i></td>
+                <td>$381,593,754</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><i><a href="/wiki/Guardians_of_the_Galaxy_Vol._3" title="Guardians of the Galaxy Vol. 3">Guardians of the Galaxy Vol. 3</a></i></td>
+                <td>$358,995,815</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><i><a href="/wiki/Oppenheimer_(film)" title="Oppenheimer (film)">Oppenheimer</a></i></td>
+                <td>$329,862,540</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><i><a href="/wiki/The_Little_Mermaid_(2023_film)" title="The Little Mermaid (2023 film)">The Little Mermaid</a></i></td>
+                <td>$298,172,056</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><i><a href="/wiki/Wonka_(film)" title="Wonka (film)">Wonka</a></i></td>
+                <td>$218,402,312</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td><i><a href="/wiki/Ant-Man_and_the_Wasp:_Quantumania" title="Ant-Man and the Wasp: Quantumania">Ant-Man and the Wasp: Quantumania</a></i></td>
+                <td>$214,504,909</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td><i><a href="/wiki/John_Wick:_Chapter_4" title="John Wick: Chapter 4">John Wick: Chapter 4</a></i></td>
+                <td>$187,131,806</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td><i><a href="/wiki/Sound_of_Freedom_(film)" title="Sound of Freedom (film)">Sound of Freedom</a></i></td>
+                <td>$184,178,046</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 style="color: red;">Exercice 3 - Vignettes</h2>
+    <div>
+        <p>4) Si l'on fait varier la taille de la fenêtre, les images se répartissent sur plusieurs lignes. </p>
+    </div>
+
+    <div>
+        <p>5) Il faut changer l'attribut float en mettant <b>right</b> au lieu de <b>left</b>.</p>
+    </div>
+
+    <div>
+        <p>10)Pour placer les titres au pied des images il faut les placer de façon <b>relative</b>:<br>
+            <ul>
+               <li>Il faut définir l'attribut <b>position</b> des balises &lt;div&gt; à <b>relative</b>.</li>  
+               <li>Ensuite ajouter les attributs <b>top|bottom|left|right</b> pour ajuster la position des cases.</li>  
+
+            </ul>
+            .</p>
+    </div>
+
+
+    <h2 style="color: red;">Exercice 4 - Barre de menu</h2>
+
+
+    <div>
+        <p>2) Dans mettez dans le style de &lt;ul&gt; mettez <b>liste-style :none</b>.</p>
+    </div>
+
+    <div>
+        <p>3) Dans mettez dans le style de &lt;li&gt; mettez <b>font-weght: bold</b> et <b>font-family: 'Courier New',serif</b>. </p>
+    </div>
+
+    <div>
+        <p>4) Dans mettez dans le style de &lt;ul&gt; mettez <b>display: flex</b> et <b>justify-content: left</b> . </p>
+    </div>
+
+    <div>
+        <p>4) Dans mettez dans le style de &lt;li&gt; mettez <b>width: 120px</b> et <b>margin: 10px</b> . </p>
+    </div>
+
+    <div>
+        <p>6) Dans mettez dans le style de &lt;ul&gt; mettez <b>background-color: tomato</b> et dans le style de li <b> background-color: yellow</b>. </p>
+    </div>
+
+    <div>
+        <p>8) Ajoutez ça au fichier css:
+            <pre>
+                ul li:nth-child(4) {
+                    margin-left: auto; 
+                  }     
+            </pre> </p>
+    </div>
+    
+    
+</body>
+</html>
