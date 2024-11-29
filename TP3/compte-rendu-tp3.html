@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte rendu TP3</title>
+    <!-- Lien vers la feuille de style externe -->
+    <!-- <link rel="stylesheet" href="compte-rendu-tp2.css"> -->
+    <!-- Styles internes déplacés dans le fichier CSS -->
+</head>
+
+<body>
+    <!-- Titre de l'exercice en rouge brique -->
+    <h1>Compte Rendu de TP3</h1>
+      
+
+
+    <h2>Exercice 1: Document de base</h2>
+
+    <ol >
+        <li>
+          <h3> Que se passe-t-il lorsque l'on visualise la fenêtre exo1.html ?</h3>
+          <p> un temps-mort d'une seconde est lancé et le message "tick" s'affiche après dans la console.</p>
+        </li>
+
+        <li>
+            <h3> Expliquez ce que fait window.onload = loaded puis window.setTimeout(refresh, 1000) ?</h3>
+            <p>  <b>window.onload</b> est un gestionnaire d'évènement qui se déclenche quand toute les ressources de la page on fini de charger.<br>
+                <b>window.setTimeout(refresh,1000)</b> est une méthode globale permettant de définir un minuteur qui exécute une fonction ou un code donné après la fin du délai indiqué. 
+            </p>
+          </li>
+
+
+          <li></li><li></li><li></li>
+          <li>
+
+          <h3> Indiquez les formules mathématiques qui permettent pour une valeur de 0 à 60 secondes de trouver les coordonnées x et y du sommet de l'aiguille. </h3>
+        <p><pre>
+            <b>x</b>= valeur en seconde
+            calcul de l'angle : <b>angle = (PI / 30)* x - PI / 2</b> 
+            calcul du sommet x :<b>x = largeur_cercle / 2+rayon_horizontal*cos(angle) </b>
+            calcul du sommet x :<b>x = hauteur_cercle / 2+rayon_vertical*sin(angle) </b>
+        </pre>
+
+        </p>
+        </li>
+
+    </ol>
+    
+</body>
+</html>

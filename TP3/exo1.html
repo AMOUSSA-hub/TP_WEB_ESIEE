@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+      "use strict";
+
+
+      function DrawArrow(timeReference,color,canva_width,canva_height,context,size,arrow_width){
+
+        let length = (Math.min(canva_width, canva_height) * 0.4)*size;
+
+
+          
+          let angle = (Math.PI / 30) * timeReference - Math.PI / 2;
+
+          let x = canva_width / 2 + length * Math.cos(angle);
+          let y = canva_height / 2 + length * Math.sin(angle);
+
+          context.lineWidth = arrow_width*2;
+          context.strokeStyle = color;
+        context.beginPath();
+        context.moveTo(canva_width / 2, canva_height / 2);
+        context.lineTo(x, y);
+        context.stroke();
+      }
+
+
+      function DrawArrowForHours(timeReference,color,canva_width,canva_height,context,size,arrow_width){
+
+  let length = (Math.min(canva_width, canva_height) * 0.4)*size;
+
+
+  
+  let angle = (Math.PI / 6) * timeReference - Math.PI / 2;
+
+  let x = canva_width / 2 + length * Math.cos(angle);
+  let y = canva_height / 2 + length * Math.sin(angle);
+
+  context.lineWidth = arrow_width*2;
+  context.strokeStyle = color;
+context.beginPath();
+context.moveTo(canva_width / 2, canva_height / 2);
+context.lineTo(x, y);
+context.stroke();
+}
+
+
+
+
+      
+    
+      function refresh(canva, context) {
+
+        console.log(new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds())
+        let hours = new Date().getHours()
+        let mins= new Date().getMinutes()
+        let sec = new Date().getSeconds()
+
+        let canva_width = canva.width;
+        let canva_height = canva.height;
+
+        context.clearRect(0, 0, canva_width, canva_height);
+
+        // Calcul de la longueur de la trotteuse
+        let length = Math.min(canva_width, canva_height) * 0.4;
+
+        DrawArrowForHours(hours,"yellow",canva_width,canva_height,context,0.80,2)
+        DrawArrow(mins,"black",canva_width,canva_height,context,1,1)
+        DrawArrow(sec,"red",canva_width,canva_height,context,1,1)
+
+        
+        context.lineWidth = 3;
+        context.strokeStyle = "green";
+        context.beginPath();
+        context.arc(canva_width / 2, canva_height / 2, Math.min(canva_height, canva_width) * 0.4, 0, 2 * Math.PI);
+        context.stroke();
+
+
+        for (let index = 0; index <12; index++) {
+          let length = 30;
+
+
+          let angle = (Math.PI / 6) * index - Math.PI / 2;
+
+          let x = canva_width / 2 + length * Math.cos(angle);
+          let y = canva_height / 2 + length * Math.sin(angle);
+          
+          context.strokeStyle = "green";
+          context.beginPath();
+          context.moveTo(x ,y);
+        context.lineTo(canva_width / 2,canva_height / 2 );
+        context.stroke();
+          
+        }
+
+      }
+      
+      window.onload = () => {
+        let canva = document.getElementById("clock");
+        let context = canva.getContext("2d");
+
+        window.setInterval(() => refresh(canva, context), 1000);
+      };
+    </script>
+</head>
+<body>
+    <h2>Oh, ma belle horloge !</h2>
+    <canvas id="clock" width="800" height="800"></canvas>
+    <canvas id="clock" width="800" height="800"></canvas>
+</body>
+</html>
